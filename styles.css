@@ -1,0 +1,257 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Fonte padrão para o site */
+}
+
+body {
+    background-color: #f8f8f8; /* Cor de fundo geral do site */
+    color: #333; /* Cor do texto geral do site */
+}
+
+/* Cabeçalho */
+header {
+    background: url('header-image.jpg') no-repeat center center/cover; /* Imagem de fundo do cabeçalho */
+    text-align: center;
+    padding: 80px 0; /* Aumentei o padding para melhor visualização */
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem; /* Aumentei o tamanho da fonte do título */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra no título */
+}
+
+header p {
+    font-size: 1.2rem; /* Tamanho da fonte do slogan */
+    margin-top: 10px; /* Espaçamento entre o título e o slogan */
+}
+
+/* Menu */
+.menu {
+    padding: 30px; /* Aumentei o padding do menu */
+    text-align: center;
+}
+
+.categoria {
+    margin-bottom: 40px; /* Aumentei o espaçamento entre as categorias */
+}
+
+.categoria h3 {
+    font-size: 1.8rem; /* Tamanho da fonte dos títulos das categorias */
+    margin-bottom: 20px; /* Espaçamento abaixo dos títulos das categorias */
+    color: #ff4500; /* Cor dos títulos das categorias */
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os produtos */
+}
+
+.produto {
+    background: white;
+    padding: 20px; /* Aumentei o padding dos produtos */
+    border-radius: 10px; /* Aumentei o border-radius dos produtos */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Sombra nos produtos */
+    text-align: center;
+    width: 250px; /* Largura fixa para melhor organização */
+}
+
+.produto img {
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Altura automática */
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+    border-radius: 8px; /* Border-radius na imagem */
+}
+
+.produto h3,
+.produto p {
+    margin-bottom: 10px; /* Espaçamento abaixo do título e do parágrafo */
+}
+
+.produto select {
+    margin-bottom: 15px; /* Espaçamento abaixo do select */
+    padding: 8px; /* Padding no select */
+    border: 1px solid #ccc; /* Borda no select */
+    border-radius: 5px; /* Border-radius no select */
+}
+
+.adicionar {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Aumentei o padding do botão */
+    cursor: pointer;
+    border-radius: 8px; /* Aumentei o border-radius do botão */
+    font-size: 1rem; /* Tamanho da fonte no botão */
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+.adicionar:hover {
+    background-color: #e03e00;
+}
+
+/* Carrinho */
+.carrinho {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    width: 300px; /* Aumentei a largura do carrinho */
+    height: 100%;
+    padding: 30px; /* Aumentei o padding do carrinho */
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.carrinho h2 {
+    font-size: 1.5rem; /* Tamanho da fonte do título do carrinho */
+    margin-bottom: 20px; /* Espaçamento abaixo do título do carrinho */
+    color: #ff4500; /* Cor do título do carrinho */
+}
+
+.carrinho ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px; /* Espaçamento abaixo da lista de itens */
+}
+
+.carrinho li {
+    margin-bottom: 10px; /* Espaçamento entre os itens do carrinho */
+    display: flex; /* Para alinhar o texto e o botão remover */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.carrinho li span {
+    flex-grow: 1; /* Para o texto ocupar o espaço disponível */
+}
+
+.remover-item {
+    background-color: #ddd; /* Cor de fundo do botão remover */
+    color: #333; /* Cor do texto do botão remover */
+    border: none;
+    padding: 6px 10px; /* Padding no botão remover */
+    cursor: pointer;
+    border-radius: 5px; /* Border-radius no botão remover */
+    margin-left: 10px; /* Espaçamento à esquerda do botão remover */
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+.remover-item:hover {
+    background-color: #ccc;
+}
+
+.carrinho p {
+    font-size: 1.2rem; /* Tamanho da fonte do total */
+    font-weight: bold; /* Negrito no total */
+    margin-bottom: 20px; /* Espaçamento abaixo do total */
+}
+
+.btn-finalizar {
+    display: block;
+    text-align: center;
+    background: #ff4500;
+    color: white;
+    padding: 12px 20px; /* Aumentei o padding do botão */
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 8px; /* Aumentei o border-radius do botão */
+    font-size: 1rem; /* Tamanho da fonte no botão */
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+.btn-finalizar:hover {
+    background: #e03e00;
+}
+
+/* Estilos para a página de pagamento */
+.pagamento-container {
+    padding: 30px; /* Aumentei o padding do container */
+    max-width: 600px; /* Largura máxima do container */
+    margin: 20px auto; /* Centraliza o container */
+    background-color: white; /* Cor de fundo do container */
+    border-radius: 10px; /* Border-radius no container */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Sombra no container */
+}
+
+.pagamento-container h2 {
+    font-size: 1.8rem; /* Tamanho da fonte dos títulos da página de pagamento */
+    margin-bottom: 20px; /* Espaçamento abaixo dos títulos */
+    color: #ff4500; /* Cor dos títulos */
+}
+
+.pagamento-container ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px; /* Espaçamento abaixo da lista de itens */
+}
+
+.pagamento-container li {
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+}
+
+.pagamento-container p {
+    font-size: 1.2rem; /* Tamanho da fonte do total */
+    font-weight: bold; /* Negrito no total */
+    margin-bottom: 30px; /* Espaçamento abaixo do total */
+}
+
+.pagamento-container label {
+    display: block; /* Para os labels ocuparem toda a largura */
+    margin-bottom: 10px; /* Espaçamento abaixo dos labels */
+}
+
+.pagamento-container input[type="radio"] {
+    margin-right: 10px; /* Espaçamento à direita dos radios */
+}
+
+.pagamento-container textarea {
+    width: 100%; /* Largura total para o textarea */
+    padding: 10px; /* Padding no textarea */
+    border: 1px solid #ccc; /* Borda no textarea */
+    border-radius: 5px; /* Border-radius no textarea */
+    margin-bottom: 20px; /* Espaçamento abaixo do textarea */
+}
+
+.pagamento-container button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Aumentei o padding do botão */
+    cursor: pointer;
+    border-radius: 8px; /* Aumentei o border-radius do botão */
+    font-size: 1rem; /* Tamanho da fonte no botão */
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+.pagamento-container button:hover {
+    background-color: #e03e00;
+}
+
+/* Estilos para tornar o site responsivo */
+@media (max-width: 768px) {
+    .produtos {
+        flex-direction: column; /* Produtos em coluna em telas menores */
+        align-items: center; /* Centraliza os produtos */
+    }
+
+    .produto {
+        width: 90%; /* Largura dos produtos em telas menores */
+    }
+
+    .carrinho {
+        width: 90%; /* Largura do carrinho em telas menores */
+        position: relative; /* Carrinho fixo vira normal */
+        height: auto; /* Altura automática */
+        bottom: 0; /* Coloca o carrinho abaixo do conteúdo */
+        top: auto; /* Remove o posicionamento no topo */
+    }
+
+    .pagamento-container {
+        width: 90%; /* Largura da página de pagamento em telas menores */
+    }
+}
