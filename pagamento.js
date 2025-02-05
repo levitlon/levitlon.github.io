@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const pedido = carrinho.map(item => `${item.nome} ${item.tamanho} x ${item.quantidade} - R$ ${(item.preco * item.quantidade).toFixed(2)}`).join("\n");
 
         // Simulação de envio para o Google Apps Script (substitua pelo seu script real)
-        const url = "https://script.google.com/macros/s/SEU_SCRIPT_ID/exec"; // Substitua pelo seu ID
+        const url = "https://script.google.com/macros/s/AKfycbwBt6QgyEkqQCauJzilGyVXq9s5TOrNNrGWCxtGM4-ZkS7VSyVWaSu5CzK6aJzFY4a3vA/exec"; // Substitua pelo seu ID
         const data = new FormData();
         data.append("pedido", pedido);
         data.append("total", total.toFixed(2));
