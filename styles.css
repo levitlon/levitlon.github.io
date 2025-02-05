@@ -7,16 +7,23 @@
 }
 
 body {
-    background-color: #f8f8f8; /* Cor de fundo geral do site */
+    /* A imagem de fundo foi movida para o body */
+    background: url('levitlonbackground.png') no-repeat center center fixed; 
+    background-size: cover; /* Essa propriedade garante que a imagem cubra todo o body */
     color: #333; /* Cor do texto geral do site */
 }
 
 /* Cabeçalho */
 header {
-    background: url('header-image.jpg') no-repeat center center/cover; /* Imagem de fundo do cabeçalho */
+    /* Remove o fundo do cabeçalho */
+    background: none;
+    /* Ajusta o padding para controlar o espaçamento do conteúdo */
+    padding: 80px 0;
     text-align: center;
-    padding: 80px 0; /* Aumentei o padding para melhor visualização */
     color: white;
+    /* Posiciona o conteúdo sobre a imagem de fundo */
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique em cima da imagem */
 }
 
 header h1 {
